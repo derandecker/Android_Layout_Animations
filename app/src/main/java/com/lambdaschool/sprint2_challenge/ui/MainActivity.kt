@@ -11,7 +11,9 @@ import android.support.v4.app.NotificationCompat
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.transition.Slide
 import android.util.Log
+import android.view.Window
 import com.lambdaschool.sprint2_challenge.R
 import com.lambdaschool.sprint2_challenge.ShoppingItemConstants
 import com.lambdaschool.sprint2_challenge.adapter.ItemListAdapter
@@ -26,6 +28,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        window.requestFeature(Window.FEATURE_CONTENT_TRANSITIONS)
+        window.enterTransition = Slide()
+        window.exitTransition = Slide()
+
         setContentView(R.layout.activity_main)
 
         rv_layout.setHasFixedSize(true)
