@@ -60,7 +60,7 @@ class ItemListAdapter(val imageList: IntArray, val itemNameList: Array<String>)
 
         }
 
-        holder.itemName.setOnClickListener { view ->
+        holder.card.setOnClickListener { view ->
             val intent = Intent(view.context, ItemDetailsActivity::class.java)
 
             val optionsBundle: Bundle = ActivityOptions.makeSceneTransitionAnimation(view.context as Activity,
