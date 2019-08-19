@@ -1,6 +1,9 @@
 package com.lambdaschool.sprint2_challenge.adapter
 
+import android.app.Activity
+import android.app.ActivityOptions
 import android.content.Intent
+import android.os.Bundle
 import android.support.v4.content.ContextCompat.getDrawable
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -53,7 +56,11 @@ class ItemListAdapter(val imageList: IntArray, val itemNameList: Array<String>)
 
         holder.itemName.setOnClickListener {view ->
             val intent = Intent(view.context, ItemDetailsActivity::class.java)
-            view.context.startActivity(intent)
+
+            val optionsBundle: Bundle = ActivityOptions.makeSceneTransitionAnimation(view.context as Activity)
+                    .toBundle()
+
+            view.context.startActivity(intent, optionsBundle)
         }
 
 

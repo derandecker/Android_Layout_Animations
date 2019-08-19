@@ -9,6 +9,7 @@
     <ImageView
         android:id="@+id/iv_item_pic"
         android:src="@drawable/avocado"
+        android:transitionName="shared_image"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_width="match_parent"
@@ -18,6 +19,7 @@
         android:id="@+id/tv_item_name"
         android:text="Test"
         android:textSize="50dp"
+        android:transitionName="shared_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_item_pic"
         app:layout_constraintEnd_toEndOf="parent"
