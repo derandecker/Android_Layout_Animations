@@ -29,7 +29,6 @@
             android:id="@+id/tv_shopping_item"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:transitionName="shared_text"
             android:layout_marginStart="8dp"
             android:text="Demo Text"
             app:layout_constraintBottom_toBottomOf="parent"

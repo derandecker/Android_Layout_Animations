@@ -17,7 +17,7 @@ class ItemDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         window.requestFeature(Window.FEATURE_CONTENT_TRANSITIONS)
-        window.enterTransition = Slide()
+//        window.enterTransition = Slide()
         window.exitTransition = Slide()
 
         setContentView(R.layout.activity_item_details)

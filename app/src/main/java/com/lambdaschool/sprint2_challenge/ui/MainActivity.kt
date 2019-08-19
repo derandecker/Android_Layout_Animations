@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         window.requestFeature(Window.FEATURE_CONTENT_TRANSITIONS)
         window.enterTransition = Slide()
-        window.exitTransition = Slide()
+//        window.exitTransition = Slide()
 
         setContentView(R.layout.activity_main)
 
