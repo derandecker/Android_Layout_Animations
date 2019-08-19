@@ -8,6 +8,11 @@ import com.lambdaschool.sprint2_challenge.R
 
 class ItemDetailsActivity : AppCompatActivity() {
 
+    companion object{
+        const val ITEM_NAME_KEY = "ITEM_NAME"
+        const val ITEM_DRAWABLE_KEY = "ITEM_DRAWABLE"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
